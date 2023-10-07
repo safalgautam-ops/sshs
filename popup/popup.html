@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Report</title>
+    <link rel="stylesheet" href="./popup.css">
+</head>
+<body>
+    <div class="container"></div>
+    <div id="modelBox">
+        <img src="images/fire.jpg" width="100%">
+        <div class="offer-text">
+            <h2>Are you in an emergency?</h2>
+            <small>Report as soon as possible</small>
+            <p>
+                Only Report Real Fire Incidents To Save Life of Yours as well as Others.
+            </p>
+            <form>
+                <button type="submit">BACHAO BACHAO</button>
+            </form>
+        </div>
+        <img src="images/close.png" class="close-icon" onclick="closeModel()">
+    </div>
+    <script>
+         let modelBox = document.getElementById('modelBox');
+            modelBox.style.display = "block";
+        
+            function closeModel () {
+                modelBox.style.display = "none";
+            }
+    </script>
+</body>
+</html>
